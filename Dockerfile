@@ -43,7 +43,7 @@ rm -f /apache-tomcat-8.5.20.tar.gz
 
 ###################### RAP deploy START ############################
 RUN wget http://who.mu.gg/RAP-0.14.12-SNAPSHOT.war && \
-mv RAP-0.14.16-SNAPSHOT.war /usr/local/apache-tomcat/webapps/ROOT.war && \
+mv RAP-0.14.12-SNAPSHOT.war /usr/local/apache-tomcat/webapps/ROOT.war && \
 rm -rf /usr/local/apache-tomcat/webapps/ROOT
 ###################### RAP deploy END ############################
 
