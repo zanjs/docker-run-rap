@@ -28,12 +28,6 @@ RUN chmod +x /etc/init.d/redis && cd /usr/src && \
  rm -rf /usr/src/redis-3.2.9.tar.gz
 ###################### redis END #####################
 
-###################### mysql START #####################
-RUN rpm -Uvh https://dev.mysql.com/get/mysql57-community-release-el6-9.noarch.rpm && \
- yum -y install mysql-community-server && \
- yum clean all
-###################### mysql END #####################
-
 ###################### tomcat START ############################
 RUN wget http://mirror.bit.edu.cn/apache/tomcat/tomcat-8/v8.5.20/bin/apache-tomcat-8.5.20.tar.gz && tar xzf apache-tomcat-8.5.20.tar.gz && \
 mv ./apache-tomcat-8.5.20 /usr/local/apache-tomcat && \
